@@ -1,0 +1,106 @@
+%Copyright 2013-2014, 2023 Steph Kraemer
+
+\documentclass{letter}
+
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{grffile}
+\usepackage{geometry}
+
+\usepackage{titlesec}
+
+% Set font for section headings
+\titleformat{\section}
+{\Large\bfseries\sffamily}{\thesection}{1em}{}
+
+% Set font for subsection headings
+\titleformat{\subsection}
+{\large\bfseries\sffamily}{\thesubsection}{1em}{}
+
+% Set font for subsubsection headings
+\titleformat{\subsubsection}
+{\normalfont\bfseries\sffamily}{\thesubsubsection}{1em}{}
+
+%margins
+\newgeometry{left=20mm,right=20mm,top=10mm, bottom=20mm}
+
+%get rid of headers/footers (i.e. no page numbers)
+\pagestyle{empty}
+
+\begin{document}
+
+<<<<<<< HEAD
+{\Huge\bf Steph Kraemer} \hfill
+=======
+{\Huge\bf Steph Kraemer} (they/she) \hfill
+>>>>>>> 9b0c6e7 (update resume)
+\begin{tabular}{r}
+  \href{mailto:purple.stephyr@fmgirl.com}{purple.stephyr@fmgirl.com} \\
+  <phone number goes here> \\
+  \href{https://www.linkedin.com/in/steph-kraemer/}{https://www.linkedin.com/in/steph-kraemer/}
+\end{tabular}
+
+%horizontal line
+\vskip 2pt
+\hrule
+
+{\large\bf SUMMARY} \\
+I am a highly skilled software developer with 9 years professional experience. I have expertise in systems programming, networking (especially L2/EVPN control-plane), and unit-testing. I take pride in my ability to write high-quality code and focus on thorough unit testing to ensure the reliability and performance of my software. With a proven track record of productivity and attention to detail, I bring a strong work ethic and a passion for programming to every project I work on.
+\vskip 2pt
+
+{\bf Technical Skills}
+
+\begin{itemize}
+  \item Programming Languages: C/C++, Python
+  \item Network Protocols: EVPN, L2VPN, MPLS, Segment Routing (SRv6), NETCONF/YANG
+  \item Operating Systems: Linux (Arch, Ubuntu, RHEL)
+  \item Tools: gdb, valgrind, git, svn, make, jam, LaTeX, emacs
+\end{itemize}
+
+%horizontal line
+\vskip 2pt
+\hrule
+{\large\bf PROFESSIONAL EXPERIENCE}
+
+{\bf Cisco,} IOS-XR L2VPN/EVPN Team, {\sl Ottawa, ON} \hfill July 2014 - Present \\
+{\sl Software Developer} \\ \\
+Responsibilities:
+\begin{itemize}
+  \item Develop and maintain features for L2VPN/EVPN protocols on IOS-XR platform.
+  \item Implement complex features for high-availability scenarios with focus on quality and performance.
+  \item Design and review architectural changes to improve system scalability and stability.
+  \item Automate unit-testing and integration testing to ensure software quality.
+\end{itemize}
+Acheivements:
+\begin{itemize}
+  \item Implemented features including Flexible-Cross-Connect-Service, EVPN-Tree, On-Demand-Nexthop.
+  \item Fixed hundreds of baseline unit-test failures, stabilizing unit tests to be usable as a precommit gate.
+  \item Found and fixed many memory issues, and enabled valgrind and ASAN testing as a precommit gate.
+  \item Optimized unit test process, bringing runtime down from over 1 hour to under 5 minutes
+\end{itemize}
+%horizontal line
+\vskip 2pt
+\hrule
+{\large\bf EDUCATION}
+
+{\bf Bachelor of Applied Science} \hfill Sept 2009 - Apr 2014 \\
+Honours Mechatronics Engineering, Co-operative Program (With Distiction) \hfill University of Waterloo, ON
+\begin{itemize}
+  \item 3.5 GPA
+\end{itemize}
+
+{\bf Fourth Year Design Project} - ``Smart'' Luggage \hfill Sept 2013 - Apr 2014
+\begin{itemize}
+  \item Designed a ``smart'' suitcase that collects various data from sensors, displaying it in an app.
+  \item Software lead in a team of four, coded in C++, Java, PHP, using an Arduino and creating an app on Android.
+\end{itemize}
+
+{\bf Co-op Positions} \hfill Sept 2010 - Dec 2013
+\begin{itemize}
+  \item Oracle, Endeca Server Team - Software Developer \hfill Apr-Aug 2013
+  \item Autodesk, Alias Team - Software Developer \hfill Aug-Dec 2012
+  \item Avvasi Inc, Packet Processing Team - Software Developer \hfill Jan-Apr 2012
+  \item Netkeepers - Support Technician \hfill May-Aug 2011
+  \item University of Waterloo - Teaching Assistant \hfill Jan-Apr,Sep-Dec 2010
+\end{itemize}
+
+\end{document}
