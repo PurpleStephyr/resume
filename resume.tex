@@ -1,77 +1,70 @@
 %Copyright 2013 Steph Kraemer
 
 % LaTeX resume using res.cls
-\documentclass[line,margin]{res}
+\documentclass[line]{res}
 
-\usepackage{hyperref}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
 \setlength{\textwidth}{5.1in} % set width of text portion
 
 \begin{document}
 
-% Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf Steph Kraemer}
+\name{Steph Kraemer}
+\address{\begin{tabular}{r}
+    \href{https://github.com/straemer}{github.com/straemer} \\
+    (226) 606-4052 \\
+    \href{mailto:sbkraeme@uwaterloo.ca}{sbkraeme@uwaterloo.ca}
+    \end{tabular}
+}
 
- \moveleft.5\hoffset\centerline{
-   \setlength{\tabcolsep}{35pt}
-   \begin{tabular}{ l c r }
-      \href{https://github.com/straemer}{github.com/straemer} & (226) 606-4052 & sbkraeme@uwaterloo.ca
-   \end{tabular}
- }
 \begin{resume}
 
-\section{SKILLS \\ SUMMARY}
+\section{SKILLS SUMMARY}
         \begin{itemize}
-        \item Strong Knowledge in C and C++(11) through work and school experience.
+        \item Proficient C++(11) programmer. Familiar with C, python, and Java.
         \item Expert GNU/Linux user through home, work, and school use.
         \item Experience using various C++ toolkits, including STL, boost, and Qt.
-        \item Experienced in multi-threaded programming through academic courses and previous work experience.
+        \item Skilled in multi-threaded programming.
+        \item Familiar with git, svn, and perforce version control systems.
         \end{itemize}
 
-\section{EDUCATION}
-        {\sl Candidate for Bachelor of Applied Science,} Mechatronics Engineering \\
-        University of Waterloo, ON
-        Expected Graduation Date: April 2014
-
-\section{Relevant \\ Courses}
-        {\sl Introduction to Computer Structures and Real-Time Systems} (MTE 241), \\
-        \rightline {Sept-Dec 2011} \\
-        \begin{itemize}
-        \item Real-time operating systems course taught in C
-        \item Included a group project to design a mock operating system within a GNU/Linux environment.
-        \item Introduced threaded programming concepts and process control.
-        \end{itemize}
-
-        {\sl Concurrent Programming} (CS 343), \hfill Sept-Dec 2013 \\
-        \begin{itemize}
-        \item Class on multi-threaded programming taught in uC++ (an extension for C++)
-        \end{itemize}
-
-\section{WORK \\ EXPERIENCE}
-        {\sl Software Developer} \hfill April-Aug 2013 \\
-        Oracle, Endeca Server Team, Boston, MA \\
+\section{WORK EXPERIENCE}
+        {\bf Software Developer} \hfill Apr-Aug 2013 \\
+        {\sl Oracle, Endeca Server Team, Boston, MA} \\
         \begin{itemize}
         \item Worked on performance and scaling team for an anylytical database.
         \item Personal projects were cache improvements, and job cancellation.
-        \item Coded in C++11, using gdb and valgrind.
+        \item Coded in C++11, using gdb, valgrind, svn, and git.
         \item Found and fixed a bug in cache eviction algorithm; increasing query performance by up to 10\%.
-        \item Gained experience working on thread scheduler code.
+        \item Worked in performance-sensitive code, such as the main thread scheduler.
         \end{itemize}
 
-        {\sl Software Developer} \hfill Aug-Dec 2012 \\
-        Autodesk, Alias Team, Toronto, ON \\
+        {\bf Software Developer} \hfill Aug-Dec 2012 \\
+        {\sl Autodesk, Alias Team, Toronto, ON} \\
         \begin{itemize}
-        \item Completely redesigned the printing workflow, using Qt printing API in C++
-        \item Gained experience using threaded programming techniques.
+        \item Completely redesigned the printing workflow.
+        \item Coded in C++, using the Qt toolkit, and perforce.
         \item Fixed bugs and added features in newly added modelling tools.
         \end{itemize}
 
-        {\sl Design Engineer} \hfill Jan-April 2012 \\
-        Avvasi Inc, Packet Processing Team, Waterloo, ON \\
+        {\bf Design Engineer} \hfill Jan-Apr 2012 \\
+        {\sl Avvasi Inc, Packet Processing Team, Waterloo, ON} \\
         \begin{itemize}
-        \item Worked on porting Internet Protocol parsers from an older product to a newer one in C++11.
-        \item Gained knowledge of networking protocols, including RTMP, RTSP, and HTTP.
+        \item Worked on porting Internet Protocol parsers from an older product to a newer one.
+        \item Coded in C++11, using gdb and svn.
+        \item Gained knowledge of RTSP, RTMP, and HTTP protocols.
+        \end{itemize}
+
+\section{EDUCATION}
+        {\bf Candidate for Bachelor of Applied Science} \hfill University of Waterloo, ON \\
+        Mechatronics Engineering \hfill Sept 2009 - Apr 2014
+
+\section{FOURTH YEAR DESIGN PROJECT}
+        \begin{itemize}
+        \item Designing a ``smart'' suitcase that tracks itself, detects mishandling, and weighs itself; interfacing with a smartphone.
+        \item Software lead for the team.
+        \item Coding in C++ and Java, using an Arduino and creating an app on Android.
         \end{itemize}
 \end{resume}
 \end{document}
