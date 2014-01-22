@@ -4,6 +4,7 @@
 \documentclass[line]{res}
 
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{grffile}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
 \setlength{\textwidth}{5.1in} % set width of text portion
@@ -20,20 +21,21 @@
 
 \begin{resume}
 
-\section{SKILLS SUMMARY}
-        \begin{itemize}
-        \item Proficient C++(11) programmer. Familiar with C, python, and Java.
-        \item Expert GNU/Linux user through home, work, and school use.
-        \item Experience using various C++ toolkits, including STL, boost, and Qt.
-        \item Skilled in multi-threaded programming.
-        \item Familiar with git, svn, and perforce version control systems.
-        \end{itemize}
+\section{PROGRAMMING LANGUAGES}
+        \includegraphics{programming_languages.eps}
+        %% \begin{itemize}
+        %% \item Proficient C++(11) programmer. Familiar with C, python, and Java.
+        %% \item Expert GNU/Linux user through home, work, and school use.
+        %% \item Experience using various C++ toolkits, including STL, boost, and Qt.
+        %% \item Skilled in multi-threaded programming.
+        %% \item Familiar with git, svn, and perforce version control systems.
+        %% \end{itemize}
 
 \section{WORK EXPERIENCE}
         {\bf Software Developer} \hfill Apr-Aug 2013 \\
         {\sl Oracle, Endeca Server Team, Boston, MA} \\
         \begin{itemize}
-        \item Worked on performance and scaling team for an anylytical database.
+        \item Worked on performance and scaling team for an analytical database.
         \item Personal projects were cache improvements, and job cancellation.
         \item Coded in C++11, using gdb, valgrind, svn, and git.
         \item Found and fixed a bug in cache eviction algorithm; increasing query performance by up to 10\%.
