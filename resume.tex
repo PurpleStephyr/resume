@@ -5,24 +5,28 @@
 \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \usepackage{grffile}
 \usepackage{geometry}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font
-%\setlength{\textwidth}{5.1in} % set width of text portion
+
+%margins
 \newgeometry{left=20mm,right=20mm,top=20mm, bottom=20mm}
+
+%get rid of headers/footers (i.e. no page numbers)
 \pagestyle{empty}
 
 \begin{document}
 
 {\Huge\bf Steph Kraemer} \hfill
 \begin{tabular}{r}
-\href{https://github.com/straemer}{github.com/straemer} \\
-\hfill (226) 606-4052 \\
-\hfill \href{mailto:sbkraeme@uwaterloo.ca}{sbkraeme@uwaterloo.ca}
+  \href{https://github.com/straemer}{github.com/straemer} \\
+  (226) 606-4052 \\
+  \href{mailto:sbkraeme@uwaterloo.ca}{sbkraeme@uwaterloo.ca}
 \end{tabular}
+
+%horizontal line
 \vskip 2pt
 \hrule
 
 {\large\bf SKILLS SUMMARY} \\
+%minipages = magic to make side-by-side columns
 \begin{minipage}{0.35\textwidth}
 \includegraphics{programming_languages.eps}
 \end{minipage}
