@@ -1,1 +1,4 @@
-resume.log
+*.log
+*.aux
+*.out
+programming_languages-eps-converted-to.pdf
