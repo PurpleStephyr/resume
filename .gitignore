@@ -1,6 +1,4 @@
-*.log
-*.aux
-*.out
+build
 programming_languages-eps-converted-to.pdf
 
 #emacs temp files
